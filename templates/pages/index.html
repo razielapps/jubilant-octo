@@ -1,0 +1,821 @@
+{% extends 'base.html' %} {% load static %}
+<title>{% block title %}Home{% endblock title %}</title>
+{% block content %}
+
+<section class="hero-area">
+  <img class="hero-shape" src="{% static 'images/hero/hero-shape.svg' %}" alt="#" />
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-5 col-md-12 col-12">
+        <div class="hero-content">
+          <h4 class="wow fadeInUp" data-wow-delay=".2s">
+            Start Mining & Grow Wealth
+          </h4>
+          <h1 class="wow fadeInUp" data-wow-delay=".4s">
+
+            Put your <br />idle Funds
+            <span>
+
+              <img class="text-shape" src="{% static 'images/hero/text-shape.svg' %}" alt="#" />
+              To Work.
+            </span>
+          </h1>
+          <p class="wow fadeInUp" data-wow-delay=".6s">
+            Put your money to work by powering global<br /> Bitcoin mining operations. Watch your investment generate
+            returns.
+            in real time while contributing to the energy-driven crypto network.
+
+          </p>
+          <div class="button wow fadeInUp" data-wow-delay=".8s">
+            <a href="{% url 'deposit' %}" class="btn">Start Investing</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 col-12">
+        <div class="hero-image">
+          <img class="main-image" src="{% static 'images/hero/home2-bg.png' %}" alt="#" />
+          <img class="h2-move-1" src="{% static 'images/hero/h2-bit-l.png' %}" alt="#" />
+          <img class="h2-move-2" src="{% static 'images/hero/h2-bit-m.png' %}" alt="#" />
+          <img class="h2-move-3" src="{% static 'images/hero/h2-bit-s.png' %}" alt="#" />
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="feature section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <h3 class="wow zoomIn" data-wow-delay=".2s">Why choose us</h3>
+          <h2 class="wow fadeInUp" data-wow-delay=".4s">Our features</h2>
+          <p class="wow fadeInUp" data-wow-delay=".6s">
+            Discover the features we’ve built to maximize your benefits, streamline your experience, and make your
+            investment in the BitWatt Network secure, efficient, and rewarding.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".2s">
+        <div class="feature-box">
+          <div class="tumb">
+            <img src="{% static 'images/features/feature-icon-1.png' %}" alt="" />
+          </div>
+          <h4 class="text-title">Income Roundup</h4>
+          <p>
+            Our new feature rounds up your monthly income to the next whole number, helping you maximize earnings
+            effortlessly and make every Bitcoin count
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".4s">
+        <div class="feature-box">
+          <div class="tumb">
+            <img src="{% static 'images/features/feature-icon-2.png' %}" alt="" />
+          </div>
+          <h4 class="text-title">Safe & Secure</h4>
+          <p>
+            Your funds are safeguarded with 256-bit end-to-end encryption—accessible exclusively by you.
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 wow fadeInUp" data-wow-delay=".6s">
+        <div class="feature-box">
+          <div class="tumb">
+            <img src="{% static 'images/features/feature-icon-3.png' %}" alt="" />
+          </div>
+          <h4 class="text-title">A24/7 Mining Rewards</h4>
+          <p>
+            With BitWatt, your funds are always active in our mining network, converting energy into cryptocurrency.
+            Enjoy daily returns automatically, while the system handles everything for you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="start-process section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <h3 class="wow zoomIn" data-wow-delay=".2s">
+            Ready to get started?
+          </h3>
+          <h2 class="wow fadeInUp" data-wow-delay=".4s">
+            3 Steps To Start
+          </h2>
+          <p class="wow fadeInUp" data-wow-delay=".6s">
+            You are only a few steps away from turning idle money into a working asset that grows while you
+            sleep—building a future you will be proud of.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="single-process">
+          <span class="serial">01</span>
+          <h3>Set Up Your Account</h3>
+          <p>Firstly, apply to get your account fully set up. It only takes a few minutes, and then you are ready to put
+            your money to work,
+          <p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="single-process">
+          <span class="serial">02</span>
+          <h3>Make Payment</h3>
+          <p>Put your idle money to work by subscribing to a Power Contract. Your funds are used to source electricity,
+            which is then distributed to high-performance mining computers worldwide.</p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="single-process">
+          <span class="serial">03</span>
+          <h3>Receive Monthly Interests & Daily Bonus</h3>
+          <p>Your funds power mining operations, and you receive monthly percentages plus daily bonuses from the Bitcoin
+            mined.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="bitcoin-chart" style="width: 100%;">
+  <iframe src="https://widget.coinlib.io/widget?type=chart&theme=light&coin_id=859&pref_coin_id=1505" width="100%"
+    height="536px" scrolling="auto" marginwidth="0" marginheight="0" frameborder="0" border="0"
+    style="border:0;margin:0;padding:0;line-height:14px;"></iframe>
+</section>
+<section class="team section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <h3 class="wow zoomIn" data-wow-delay=".2s">Expert Team</h3>
+          <h2 class="wow fadeInUp" data-wow-delay=".4s">Meet Our Team</h2>
+          <p class="wow fadeInUp" data-wow-delay=".6s">
+            Meet the team whose vision and expertise have shaped BitWatt Network Inc., creating a secure, efficient, and
+            profitable crypto-mining platform for our users.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=".3s">
+        <div class="single-team">
+          <div class="team-image">
+            <img src="{% static 'images/team/team3.jpg' %}" alt="#" />
+          </div>
+          <div class="content">
+            <h4>
+              Ethan Parker
+              <span>Founder</span>
+            </h4>
+            <!-- <ul class="social">
+              <li>
+                <a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="lni lni-instagram"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=".5s">
+        <div class="single-team">
+          <div class="team-image">
+            <img src="{% static 'images/team/team1.jpg' %}" alt="#" />
+          </div>
+          <div class="content">
+            <h4>
+              Emily Parker
+              <span>Developer</span>
+            </h4>
+            <!-- <ul class="social">
+              <li>
+                <a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="lni lni-instagram"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=".7s">
+        <div class="single-team">
+          <div class="team-image">
+            <img src="{% static 'images/team/team2.jpg' %}" alt="#" />
+          </div>
+          <div class="content">
+            <h4>
+              Andrew Bennett
+              <span>Designer</span>
+            </h4>
+            <!-- <ul class="social">
+              <li>
+                <a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="lni lni-instagram"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-6 col-12 wow fadeInUp" data-wow-delay=".9s">
+        <div class="single-team">
+          <div class="team-image">
+            <img src="{% static 'images/team/team4.jpg' %}" alt="#" />
+          </div>
+          <div class="content">
+            <h4>
+              Jamal Thompson
+              <span>Co-Founder</span>
+            </h4>
+            <!-- <ul class="social">
+              <li>
+                <a href="javascript:void(0)"><i class="lni lni-facebook-filled"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="lni lni-instagram"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="lni lni-twitter-original"></i></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"><i class="lni lni-linkedin-original"></i></a>
+              </li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="road-map section" style="background-image:url({% static 'images/road-map/bg.png' %})">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <h2 class="wow fadeInUp" data-wow-delay=".4s">Road Map</h2>
+          <p class="wow fadeInUp" data-wow-delay=".6s">
+            Discover the key milestones that have shaped BitWatt Network Inc. into the platform it is today, driving
+            innovation and growth in the crypto and mining space.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="top-row">
+      <div class="">
+        <div class="row road-map-slider">
+          <div class="col-lg-2 col-md-3 col-12 p-0">
+            <div class="single-map down">
+              <span class="arrow"></span>
+              <h3>
+                Apr 10,2013
+                <span>WattChain Labs Inc. Was Founded With 2 Million Capital</span>
+              </h3>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-12 p-0">
+            <div class="single-map">
+              <span class="arrow"></span>
+              <h3>
+                May 15,2018
+                <span>WattChain Labs Inc Was Changed To BitWatt Network Inc.</span>
+              </h3>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-12 p-0">
+            <div class="single-map down">
+              <span class="arrow"></span>
+              <h3>
+                Aug 05,2018
+                <span>Got Our First 500,000 Concurring Users</span>
+              </h3>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-12 p-0">
+            <div class="single-map">
+              <span class="arrow"></span>
+              <h3>
+                Mar 21,2019
+                <span>Extra-Security Layer Was Introduced</span>
+              </h3>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-12 p-0">
+            <div class="single-map down">
+              <span class="arrow"></span>
+              <h3>
+                Jul 25,2020
+                <span>Reached 1 Million Concurring Users</span>
+              </h3>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-12 p-0">
+            <div class="single-map">
+              <span class="arrow"></span>
+              <h3>
+                Oct 22,2021
+                <span>Revenue Hits 100 Million</span>
+              </h3>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-12 p-0">
+            <div class="single-map down">
+              <span class="arrow"></span>
+              <h3>
+                Feb 25,2022
+                <span>Reached 2 Million Concurring Users</span>
+              </h3>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-12 p-0">
+            <div class="single-map">
+              <span class="arrow"></span>
+              <h3>
+                Jul 05,2024
+                <span>Revenue Hits 360 Million</span>
+              </h3>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-12 p-0">
+            <div class="single-map down">
+              <span class="arrow"></span>
+              <h3>
+                Mar 15,2025
+                <span>Revenue Skyrocketed to 500 Million</span>
+              </h3>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-12 p-0">
+            <div class="single-map">
+              <span class="arrow"></span>
+              <h3>
+                Feb 22,2025
+                <span>BitWatt Network Inc. Secured 250 Million As Insurance</span>
+              </h3>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-12 p-0">
+            <div class="single-map down">
+              <span class="arrow"></span>
+              <h3>
+                June 10,2025
+                <span>Added Etherum Holdings</span>
+              </h3>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-3 col-12 p-0">
+            <div class="single-map">
+              <span class="arrow"></span>
+              <h3>
+                Apr 24,2025
+                <span>Removed Etherum Holdings</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="testimonials style2 section" style="padding-bottom: 50px;">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <h3 class="wow zoomIn" data-wow-delay=".2s">Customer Reviews</h3>
+          <h2 class="wow fadeInUp" data-wow-delay=".4s">
+            Our Testimonials
+          </h2>
+          <p class="wow fadeInUp" data-wow-delay=".6s">
+            These are testimonials from verified members of BitWatt Network Inc., sharing their experiences and success
+            stories
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row testimonial-slider">
+      <div class="col-lg-6 col-12">
+        <div class="single-testimonial">
+          <div class="inner-content">
+            <div class="quote-icon">
+              <i class="lni lni-quotation"></i>
+            </div>
+            <div class="text">
+              <p>
+                “After a year of trial and error, joy, pain, and a £3,000 hole in my account, fate led me to BitWatt.
+                After just one week using their power contracts, I felt like my funds were finally working for me,
+                generating real Bitcoin returns effortlessly.”
+              </p>
+            </div>
+            <div class="author">
+              <img src="{% static 'images/testimonial/JeniferHolman.jpg' %}" alt="#" />
+              <h4 class="name">
+                Jenifer Holman
+                <span class="deg">Business Manager</span>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="single-testimonial">
+          <div class="inner-content">
+            <div class="quote-icon">
+              <i class="lni lni-quotation"></i>
+            </div>
+            <div class="text">
+              <p>
+                If you want to earn consistently from cryptocurrency and see your funds grow through energy-powered
+                mining, I can’t recommend BitWatt’s team highly enough—they make passive earnings simple and reliable.”
+              </p>
+            </div>
+            <div class="author">
+              <img src="{% static 'images/testimonial/testi-2.png' %}" alt="#" />
+              <h4 class="name">
+                David Warner
+                <span class="deg">Business Analyst</span>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="single-testimonial">
+          <div class="inner-content">
+            <div class="quote-icon">
+              <i class="lni lni-quotation"></i>
+            </div>
+            <div class="text">
+              <p>
+                I found BitWatt Network online and became interested in putting my idle funds to work through their
+                power contracts. After trying other crypto opportunities for three years, I finally decided to get
+                serious and focus on energy-powered Bitcoin mining.”
+              </p>
+            </div>
+            <div class="author">
+              <img src="{% static 'images/testimonial/testi-1.png' %}" alt="#" />
+              <h4 class="name">
+                Jems Gilario
+                <span class="deg">Business Man</span>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="single-testimonial">
+          <div class="inner-content">
+            <div class="quote-icon">
+              <i class="lni lni-quotation"></i>
+            </div>
+            <div class="text">
+              <p>
+                "Thanks Ethan Parker[Founder] for creating such an outstanding platform. I can honestly say that the
+                knowledge and guidance I gained in just a few months have helped me put my funds to work efficiently and
+                earn Bitcoin consistently."
+              </p>
+            </div>
+            <div class="author">
+              <img src="{% static 'images/testimonial/Lisa-Benjamin.jpg' %}" alt="#" />
+              <h4 class="name">
+                Lisa Benjamin
+                <span class="deg">Business Woman</span>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="single-testimonial">
+          <div class="inner-content">
+            <div class="quote-icon">
+              <i class="lni lni-quotation"></i>
+            </div>
+            <div class="text">
+              <p>
+                “Since joining, my understanding of passive income and the value of patience has taken my investment
+                strategy to a whole new level. I’m so glad I finally joined BitWatt Network; even as my earnings grow, I
+                know this is a platform I’ll continue to rely on for the long term.”
+              </p>
+            </div>
+            <div class="author">
+              <img src="{% static 'images/testimonial/testi-3.png' %}" alt="#" />
+              <h4 class="name">
+                Jems Gilario
+                <span class="deg">Graphics Designer</span>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="faq section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <h3 class="wow zoomIn" data-wow-delay=".2s">FAQ</h3>
+          <h2 class="wow fadeInUp" data-wow-delay=".4s">
+            frequently asked questions
+          </h2>
+          <p class="wow fadeInUp" data-wow-delay=".6s">
+            These are some questions we often hear from our customers about putting funds to work in the BitWatt
+            Network. We’ve compiled clear answers to help you understand the process and benefits.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-6 col-md-12 col-12">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading1">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse1" aria-expanded="false" aria-controls="collapse1">
+                <span class="title">How can I Invest 1 Bitcoin and more?</span><i class="lni lni-plus"></i>
+              </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>
+                  To start, you’ll need to create an account with BitWatt Network and verify your identity using a
+                  government-issued ID. Once submitted, your information will undergo a confirmation process (typically
+                  up to 10 days) before you can start funding your power contracts.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading2">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                <span class="title">What cryptocurrencies can I Hold?</span><i class="lni lni-plus"></i>
+              </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>
+                  Currently, BitWatt Network only supports Bitcoin for mining and payouts. Other cryptocurrencies may be
+                  supported in the future as we expand our platform. You can still deposit other crypto types, but
+                  returns will be credited in Bitcoin.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading3">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                <span class="title">Do I need an account to participate?</span><i class="lni lni-plus"></i>
+              </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+              data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <p>
+                  Yes, an account is required. Without an account, you cannot access our power contracts, track
+                  earnings, or withdraw your Bitcoin.</b>).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-12 col-12 xs-margin">
+        <div class="accordion" id="accordionExample2">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading11">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                <span class="title">How Can I Withdraw My Bitcoin?</span><i class="lni lni-plus"></i>
+              </button>
+            </h2>
+            <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
+              data-bs-parent="#accordionExample2">
+              <div class="accordion-body">
+                <p>
+                  Go to Dashboard > Payments, then click the Cash-Out button.
+                  Note: You must first set up your wallet correctly in your account before the Cash-Out option becomes
+                  available.
+
+                  For additional guidance, your account manager can assist with withdrawals.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading22">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse22" aria-expanded="false" aria-controls="collapse22">
+                <span class="title">How Long Does It Takes To Get My BitCoin?</span><i class="lni lni-plus"></i>
+              </button>
+            </h2>
+            <div id="collapse22" class="accordion-collapse collapse" aria-labelledby="heading22"
+              data-bs-parent="#accordionExample2">
+              <div class="accordion-body">
+                <p>
+                  Once a withdrawal is requested, your Bitcoin will be sent to your wallet within 3–24 hours.
+                  Note: Delays usually occur if wallet details are entered incorrectly. Always double-check your wallet
+                  address to ensure timely payouts.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading43">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse43" aria-expanded="false" aria-controls="collapse43">
+                <span class="title">How can I get direct support?</span><i class="lni lni-plus"></i>
+              </button>
+            </h2>
+            <div id="collapse43" class="accordion-collapse collapse" aria-labelledby="heading43"
+              data-bs-parent="#accordionExample2">
+              <div class="accordion-body">
+                <p>
+                  Your account manager is always at your services when needed. But note that there might be slow reolies
+                  sometimes if they are having many issues to handle.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading54">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse54" aria-expanded="false" aria-controls="collapse54">
+                <span class="title">What is a Power Contract?</span><i class="lni lni-plus"></i>
+              </button>
+            </h2>
+            <div id="collapse54" class="accordion-collapse collapse" aria-labelledby="heading54"
+              data-bs-parent="#accordionExample2">
+              <div class="accordion-body">
+                <p>
+                  A Power Contract is an investment plan where your funds are used to source electricity for Bitcoin
+                  mining operations. Your earnings are based on the amount of Bitcoin mined through the electricity your
+                  funds help generate.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading53">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse53" aria-expanded="false" aria-controls="collapse53">
+                <span class="title">How much can I earn with a Power Contract?</span><i class="lni lni-plus"></i>
+              </button>
+            </h2>
+            <div id="collapse53" class="accordion-collapse collapse" aria-labelledby="heading53"
+              data-bs-parent="#accordionExample2">
+              <div class="accordion-body">
+                <p>
+                  Earnings depend on the size of your investment and the mining output. Many users earn daily and
+                  monthly returns, with bonuses applied automatically based on the amount of Bitcoin mined by the
+                  electricity sourced from their funds.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading63">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse63" aria-expanded="false" aria-controls="collapse63">
+                <span class="title">HIs my investment safe?</span><i class="lni lni-plus"></i>
+              </button>
+            </h2>
+            <div id="collapse63" class="accordion-collapse collapse" aria-labelledby="heading63"
+              data-bs-parent="#accordionExample2">
+              <div class="accordion-body">
+                <p>
+                  Yes. BitWatt Network has $250 million in insurance coverage to protect your funds in the unlikely
+                  event of any issue. All wallets are secured with 256-bit end-to-end encryption, accessible only by
+                  you.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading73">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse73" aria-expanded="false" aria-controls="collapse73">
+                <span class="title">Can I increase my returns?</span><i class="lni lni-plus"></i>
+              </button>
+            </h2>
+            <div id="collapse73" class="accordion-collapse collapse" aria-labelledby="heading73"
+              data-bs-parent="#accordionExample2">
+              <div class="accordion-body">
+                <p>
+                  You can maximize earnings by investing in larger power contracts, or by participating in premium plans
+                  that offer priority payouts and additional benefits.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading83">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse83" aria-expanded="false" aria-controls="collapse83">
+                <span class="title">How do I track my earnings?</span><i class="lni lni-plus"></i>
+              </button>
+            </h2>
+            <div id="collapse83" class="accordion-collapse collapse" aria-labelledby="heading83"
+              data-bs-parent="#accordionExample2">
+              <div class="accordion-body">
+                <p>
+                  All earnings are visible in your Dashboard.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading93">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse93" aria-expanded="false" aria-controls="collapse93">
+                <span class="title">Do I need to manage the mining process myself?</span><i class="lni lni-plus"></i>
+              </button>
+            </h2>
+            <div id="collapse93" class="accordion-collapse collapse" aria-labelledby="heading93"
+              data-bs-parent="#accordionExample2">
+              <div class="accordion-body">
+                <p>
+                  No. BitWatt Network’s system is fully automated. Your funds power mining operations, and earnings are
+                  calculated and credited automatically.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="heading103">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapse103" aria-expanded="false" aria-controls="collapse103">
+                <span class="title">Can I start with a small investment?</span><i class="lni lni-plus"></i>
+              </button>
+            </h2>
+            <div id="collapse103" class="accordion-collapse collapse" aria-labelledby="heading103"
+              data-bs-parent="#accordionExample2">
+              <div class="accordion-body">
+                <p>
+                  Yes. You can begin with smaller amounts and gradually increase your investment as you see returns.
+                  Power contracts are flexible to suit both new and experienced investors.
+                </p>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

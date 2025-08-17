@@ -1,0 +1,145 @@
+{% extends 'base.html' %}
+{% load static %}
+<title>{% block title %}About Us{% endblock title %}</title>
+{% block content %}
+<!-- about section -->
+<section class="about section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-12">
+        <div class="image wow fadeInUp" data-wow-delay=".4s"
+          style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+          <img src="{% static 'images/about/about-image.png' %}" alt="#">
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="content wow fadeInUp" data-wow-delay=".7s"
+          style="visibility: visible; animation-delay: 0.7s; animation-name: fadeInUp;">
+          <h4>BITCOIN ECOSYSTEM</h4>
+          <h2>Our platform channels your funds like energy through the Bitcoin network, working nonstop to deliver
+            maximum gains</h2>
+          <p>Individuals can invest their funds to fuel Bitcoin mining, watch their earnings grow, and manage it all
+            securely through our digital wallet.
+
+
+            Everyone can explore how energy transforms into digital wealth, learning from a trusted platform built for
+            transparency and efficiency.
+
+            Since 2013, we have been building the BitWatt Network, a smart, modular system that channels energy into
+            crypto, maximizes returns, and makes managing your funds effortless.</p>
+          <div class="list">
+            <div class="single-list">
+              <div class="list-icon">
+                <i class="lni lni-checkmark"></i>
+              </div>
+              <h4>Structured for Stability</h4>
+              <p>Your Bitcoin is managed with a flexible yet secure modular structure, ensuring your funds are always
+                working at their best.</p>
+            </div>
+            <div class="single-list">
+              <div class="list-icon">
+                <i class="lni lni-checkmark"></i>
+              </div>
+              <h4>Insurance Protection</h4>
+              <p>Your funds are safeguarded with a $230 million insurance reserve, ensuring that in the unlikely event
+                of any issue, your investment remains protected.</p>
+            </div>
+            <div class="single-list">
+
+              <div class="list-icon">
+                <i class="lni lni-checkmark"></i>
+              </div>
+              <h4>Priority Advantage</h4>
+              <p>Deposits above $5,000 unlock priority status, giving you faster transaction processing, early payouts,
+                and dedicated support.</p>
+            </div>
+            <div class="single-list">
+              <div class="list-icon">
+                <i class="lni lni-checkmark"></i>
+              </div>
+              <h4>Refundable</h4>
+              <p>Your money is fully refundable. Once our team verifies your identity, you can receive your funds back
+                within 2 days.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- end about section -->
+<!-- steps section -->
+<section class="start-process dark section">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="section-title">
+          <h3 class="wow zoomIn" data-wow-delay=".2s"
+            style="visibility: visible; animation-delay: 0.2s; animation-name: zoomIn;">Ready to get started?</h3>
+          <h2 class="wow fadeInUp" data-wow-delay=".4s"
+            style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">3 Steps To Start</h2>
+          <p class="wow fadeInUp" data-wow-delay=".6s"
+            style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">You are only a few steps away
+            from turning idle money into a working asset that grows while you sleep—building a future you will be proud
+            of.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="single-process">
+          <span class="serial">01</span>
+          <h3>Set Up Your Account</h3>
+          <p>Firstly, apply to get your account fully set up. It only takes a few minutes, and then you are ready to put
+            your money to work,
+          <p>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="single-process">
+          <span class="serial">02</span>
+          <h3>Make Payment</h3>
+          <p>Put your idle money to work by subscribing to a Power Contract. Your funds are used to source electricity,
+            which is then distributed to high-performance mining computers worldwide.</p>
+
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-4 col-12">
+        <div class="single-process">
+          <span class="serial">03</span>
+          <h3>Receive Monthly Interests & Daily Bonus</h3>
+          <p>Your funds power mining operations, and you receive monthly percentages plus daily bonuses from the Bitcoin
+            mined.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="client-logo">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-3 col-md-3 col-12 text-center">
+        <div class="single-logo">
+          <img src="{% static 'images/client-logo/Alphabet_Inc_logo.svg' %}" alt="#">
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-12 text-center">
+        <div class="single-logo">
+          <img src="{% static 'images/client-logo/TechCrunch_logo.svg' %}" alt="#">
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-12 text-center">
+        <div class="single-logo">
+          <img src="{% static 'images/client-logo/TacoBell_logo.svg' %}" alt="#">
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-3 col-12 text-center">
+        <div class="single-logo">
+          <img src="{% static 'images/client-logo/Tencent_Logo.svg' %}" alt="#">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}
